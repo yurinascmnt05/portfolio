@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-    color: #c935dc;
+    color: #f8c11c;
     font-size: 2.5rem;
 }
 
@@ -59,7 +59,7 @@ header .navegacao-primaria li a:hover::after {
     width: 100%;
     height: 0px;
     padding: 0px;
-    border-bottom: 4px solid #c935dc
+    border-bottom: 4px solid #f8c11c
 }
 
 
@@ -161,7 +161,7 @@ main .sobre {
 
 .sobre-titulo h1 {
     font-size: 2.5rem;
-    color: #c935dc;
+    color: #f8c11c;
     margin-bottom: 15px;
     font-family: 'Berkshire Swash', cursive;
 }
@@ -184,7 +184,7 @@ main .sobre {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #c935dc;
+    background-color: #f8c11c;
 }
 
 .sobre img {
@@ -223,7 +223,7 @@ main .sobre {
 }
 
 .sobre-texto h1::after {
-    background-color: #c935dc;
+    background-color: #f8c11c;
     height: 6px;
     width: 60px;
     margin: 20px 0px;
@@ -248,7 +248,7 @@ main .sobre {
 }
 
 .sobre-info i {
-    color: #c935dc;
+    color: #f8c11c;
     display: inline-block;
     padding-right: 15px;
     font-size: 1.5rem;
@@ -370,7 +370,7 @@ main .sobre {
 
 .my-services ul li i {
     font-size: 2.7rem;
-    color: #c935dc;
+    color: #f8c11c;
 }
 
 .my-services ul li h3 {
@@ -414,15 +414,15 @@ main .sobre {
 .my-services li:hover::before {
     width: 100%;
     height: 100%;
-    border-top: 2px solid purple;
-    border-right: 2px solid purple;
+    border-top: 2px solid yellow;
+    border-right: 2px solid yellow;
 }
 
 .my-services li:hover::after {
     width: 100%;
     height: 100%;
-    border-bottom: 2px solid purple;
-    border-left: 2px solid purple;
+    border-bottom: 2px solid yellow;
+    border-left: 2px solid yellow;
 }
 
 /* Experiencias */
@@ -445,7 +445,7 @@ main .sobre {
 .resume-generica h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    background-color: #c935dc;
+    background-color: #f8c11c;
     justify-self: start;
     padding: 10px;
     border-radius: 3px;
@@ -469,7 +469,7 @@ main .sobre {
 }
 
 .experience-content ul {
-    color: #c935dc;
+    color: #f8c11c;
     gap: 10px;
     display: flex;
     cursor: pointer;
@@ -503,7 +503,7 @@ main .sobre {
 }
 
 .resume-generica .experience-content div span{
-    color: #c935dc;
+    color: #f8c11c;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
@@ -538,7 +538,7 @@ main .sobre {
 
 
 .education-content ul {
-    color: #c935dc;
+    color: #f8c11c;
     gap: 10px;
     display: flex;
     cursor: pointer;
@@ -557,7 +557,7 @@ main .sobre {
 }
 
 .resume-generica .education-content div span{
-    color: #c935dc;
+    color: #f8c11c;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     
