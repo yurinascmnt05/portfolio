@@ -1,38 +1,39 @@
-function escrevendoLetra() {
-    function ativaLetra(elemento) {
-        const arrTexto = elemento.innerHTML.split('');
-        elemento.innerHTML = '';
-        arrTexto.forEach((letra, i) => {
-            setTimeout(() => {
-                elemento.innerHTML += letra;
-            }, 75 * i)
+function writeTitle(){
+    function activeWorld(element){
+        const arrText = element.innerHTML.split('');
+        element.innerHTML = '';
+        arrText.forEach((letra, i) =>{
+            setTimeout(()=>{
+                element.innerHTML += letra;
+            }, 75 * i);
         })
     }
-
-    const titulo = document.querySelector('.digitando');
-
-    ativaLetra(titulo);
+    const title = document.querySelector('.digitando');
+    activeWorld(title);
 }
+writeTitle();
 
-escrevendoLetra();
 
-function menuMobol(){
-    const ativaMenu = document.querySelector('.fa-bars');
+
+
+function menuMobile(){
+    const activeMenu = document.querySelector('.fa-bars');
     const navMenu = document.querySelector('header .navegacao-primaria');
-
-    ativaMenu.addEventListener('click', () => {
-        ativaMenu.classList.toggle('fa-x');
+    
+    
+    activeMenu.addEventListener('click',()=>{
+        activeMenu.classList.toggle('fa-x');
         navMenu.classList.toggle('ativado');
-    })
-}
+    });
 
-menuMobol();
+}
+menuMobile();
 
 function aboutMe(){
-    const divExperience = document.querySelectorAll('.experience-content div'); 
-    const liExperience = document.querySelectorAll('.experience-content ul li'); 
-    const divEducation = document.querySelectorAll('.education-content div'); 
-    const liEducation = document.querySelectorAll('.education-content ul li'); 
+    const divExperience = document.querySelectorAll('.experience_content div'); 
+    const liExperience = document.querySelectorAll('.experience_content ul li'); 
+    const divEducation = document.querySelectorAll('.education_content div'); 
+    const liEducation = document.querySelectorAll('.education_content ul li'); 
 
     divEducation[0].classList.add('active');
     liEducation[0].classList.add('active');
