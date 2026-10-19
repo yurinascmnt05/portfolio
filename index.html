@@ -3,362 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Portfolio profissional de Yuri Nascimento - Analista de T.I e Desenvolvedor Web. Conheça projetos, habilidades, formação e experiências.">
+    <meta name="author" content="Yuri Nascimento">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Favicon Moderno SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23000'/><text x='50%' y='66%' font-size='50' font-family='serif' font-weight='bold' fill='%23F8C11C' text-anchor='middle'>YN</text></svg>">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio | Yuri Nascimento - Desenvolvedor Web">
+    <meta property="og:description" content="Analista de T.I e Desenvolvedor Web focado em criar soluções digitais modernas, eficientes e de alto impacto.">
+    <meta property="og:image" content="img/photo.jpeg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio | Yuri Nascimento - Desenvolvedor Web">
+    <meta name="twitter:description" content="Analista de T.I e Desenvolvedor Web focado em criar soluções digitais modernas, eficientes e de alto impacto.">
+    <meta name="twitter:image" content="img/photo.jpeg">
+
+    <!-- Dados Estruturados Schema.org (JSON-LD) para Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yuri Nascimento",
+      "jobTitle": "Analista de T.I & Desenvolvedor Web",
+      "description": "Estudante de Sistemas de Informação e Desenvolvedor Web focado em criar soluções digitais modernas, eficientes e funcionais.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Americana",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "email": "yurisn17@gmail.com",
+      "sameAs": [
+        "https://github.com/yurinascmnt05",
+        "https://linkedin.com/in/yurinnscmnto",
+        "https://instagram.com/yurisilva_nascimento"
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css?v=2.3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio | Yuri Nascimento</title>
 </head>
 <body>
-    
     <header>
-        <h1>NSC<span>MNTO</span></h1>
-            <nav>
-                <ul aria-label="Navegação primaria" class="navegacao-primaria">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#resumo">Resumo</a></li>
-                    <li><a href="#Habilidades">Habilidades</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                <i class="fa-solid fa-bars"></i>       
-            </nav>
+        <a href="#home" class="logo" aria-label="NSCMNTO - Voltar para o início">NSC<span>MNTO</span></a>
+        <nav aria-label="Navegação principal">
+            <ul class="navegacao-primaria">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#resumo">Resumo</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button type="button" class="btn_menu_mobile" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
     </header>
-    <section aria-label="seção curriculo download Yuri" class="section-div" id="home">
-        <div>
-            <h2>Olá pessoal! Eu sou...</h2>
-            <h2 class="digitando">Desenvolvedor Web</h2>
-            <p>Estudante de Sistemas de Informação e Analista de T.I apaixonado por tecnologia. Dedicado a criar soluções digitais modernas, eficientes e funcionais através do código.</p>
-            <a href="#">Download CV</a>
-        </div>
-        <img src="img/photo.jpeg" alt="ilustration image">
-    </section>
-    <main>
-        <article aria-label="Seção sobre mim" class="sobre" id="sobre">
+
+    <main id="conteudo-principal">
+        <section aria-label="Apresentação inicial" class="section-div" id="home">
+            <div>
+                <h2>Olá pessoal! Eu sou...</h2>
+                <h1 class="digitando">Desenvolvedor Web</h1>
+                <p>Estudante de Sistemas de Informação e Analista de T.I apaixonado por tecnologia. Dedicado a criar soluções digitais modernas, eficientes e funcionais através do código.</p>
+                <a href="mailto:yurisn17@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Curr%C3%ADculo%20-%20Yuri%20Nascimento" aria-label="Solicitar currículo de Yuri Nascimento em PDF">Download CV</a>
+            </div>
+            <img src="img/photo.jpeg" alt="Foto de Yuri Nascimento, Analista de T.I e Desenvolvedor Web" width="500" height="600" fetchpriority="high">
+        </section>
+
+        <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
             <div class="sobre_titulo">
-                <h1>Sobre mim</h1>
+                <h2 id="sobre-titulo">Sobre mim</h2>
                 <p>Perfil profissional - Tudo sobre mim</p>
-                <div aria-label="Seção de botões">
+                <div class="dots_decorativos" aria-hidden="true">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <img src="img/photo.jpeg" alt="ilustration">
+            <img src="img/photo.jpeg" alt="Foto de perfil de Yuri Nascimento" width="500" height="600" loading="lazy" decoding="async">
             <div class="sobre_conteudo">
                 <div class="sobre_texto">
-                    <h1>Eu sou Yuri Nascimento!</h1>
-                    <p>Olá! Meu nome é Yuri Nascimento, tenho 21 anos e sou do interior de São Paulo. Concluí o ensino médio na ETEC Polivalente de Americana, juntamente com o curso técnico em Desenvolvimento de Sistemas. Atualmente estou cursando Sistemas de Informação na FAM Americana e atuo como Analista de T.I em uma empresa da região.<br><br> Sou um grande entusiasta de tecnologia e adoro buscar em códigos, soluções para problemas do dia a dia. No meu perfil do "LinkedIn", gosto de compartilhar, projetos, eventos, estudos e desafios que a vida de T.I trás.</p>
+                    <h3>Eu sou Yuri Nascimento!</h3>
+                    <p>Olá! Meu nome é Yuri Nascimento, tenho 21 anos e sou do interior de São Paulo. Concluí o ensino médio na ETEC Polivalente de Americana, juntamente com o curso técnico em Desenvolvimento de Sistemas. Atualmente estou cursando Sistemas de Informação na FAM Americana e atuo como Analista de T.I em uma empresa da região.<br><br> Sou um grande entusiasta de tecnologia e adoro buscar em códigos, soluções para problemas do dia a dia. No meu perfil do "LinkedIn", gosto de compartilhar projetos, eventos, estudos e desafios que a vida de T.I traz.</p>
                 </div>
-                <div class="sobre_info">
-                    <p><i class="fa-solid fa-calendar-days"></i>10/05/2005</p>
-                    <p><i class="fa-solid fa-location-dot"></i>Americana - SP</p>
-                    <p><i class="fa-brands fa-whatsapp"></i>+55 19 989296671</p>
-                    <p><i class="fa-solid fa-envelope"></i>yurisn17@gmail.com</p>
-                </div>
+                <ul class="sobre_info" aria-label="Informações de contato e localização">
+                    <li><i class="fa-solid fa-calendar-days" aria-hidden="true"></i><span>10/05/2005</span></li>
+                    <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Americana - SP</span></li>
+                    <li><a href="https://wa.me/5519989296671" target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>+55 19 989296671</span></a></li>
+                    <li><a href="mailto:yurisn17@gmail.com" aria-label="Enviar e-mail para Yuri"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>yurisn17@gmail.com</span></a></li>
+                </ul>
             </div>
-        </article>
-    </main>
+        </section>
 
-    <section class="services">
+        <section class="services" id="servicos" aria-labelledby="servicos-titulo">
             <div class="sobre_titulo">
-                <h1>Sobre mim</h1>
-                <p>Perfil profissional - Tudo sobre mim</p>
-                <div aria-label="Seção de botões">
+                <h2 id="servicos-titulo">Meus Serviços</h2>
+                <p>Soluções digitais que entrego com excelência técnica</p>
+                <div class="dots_decorativos" aria-hidden="true">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
             <div class="my_service">
-                <ul aria-label="Navegação secundaria">
+                <ul aria-label="Lista de serviços prestados">
                     <li>
-                        <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                        <i class="fa-sharp fa-solid fa-pen-to-square" aria-hidden="true"></i>
                         <h3>Web Designer</h3>
                         <p>Criação de layouts modernos, visualmente marcantes e totalmente responsivos.</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-globe" aria-hidden="true"></i>
                         <h3>Web Developer</h3>
                         <p>Desenvolvimento de sites e aplicações web com código limpo, semântico e performático.</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-camera"></i>
+                        <i class="fa-solid fa-camera" aria-hidden="true"></i>
                         <h3>Photography</h3>
                         <p>Captação e edição visual focadas em destacar marcas, produtos e projetos.</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-layer-group"></i>
+                        <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
                         <h3>SEO analysis</h3>
                         <p>Otimização de páginas para mecanismos de busca, visando maior visibilidade orgânica.</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-medal"></i>
+                        <i class="fa-solid fa-medal" aria-hidden="true"></i>
                         <h3>Creative Design</h3>
                         <p>Identidade visual autêntica e peças criativas que valorizam cada projeto.</p>
                     </li>
                     <li>
-                        <i class="fa-sharp fa-solid fa-palette"></i>
+                        <i class="fa-sharp fa-solid fa-palette" aria-hidden="true"></i>
                         <h3>UX/UI</h3>
                         <p>Construção de interfaces intuitivas focadas na usabilidade e na jornada do usuário.</p>
                     </li>
                 </ul>
             </div>
-    </section>
-    <div class="my_resume" id="resumo">
-        <div class="sobre_titulo">
-            <h1>Resumo</h1>
-            <p>Minha trajetória acadêmica e experiências no mercado de tecnologia.</p>
-            <div aria-label="Seção de botões">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <div class="resume_generica">
-            <h2 class="experience"><i class="fa-solid fa-handshake"></i> Experience</h2>
-            <div class="experience_content">
-                <div>
-                    <span>2025 - Atual</span>
-                    <h3>Analista de T.I - GHPC Group</h3>
-                    <p>Responsável pela infraestrutura, suporte, manuntenção e desenvolvimento em todo o grupo GHPC!</p>
-                </div>
-                <div>
-                    <span>2026</span>
-                    <h3>Web Developer - FrançaSilva</h3>
-                    <p>Desenvolvimento da página web para a empresa FrançaSilva</p>
-                </div>
-                <ul>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                </ul>
-            </div>
-            <h2 class="education"><i class="fa-solid fa-book"></i>Education</h2>
-            <div class="education_content">
-                <div>
-                    <span>2021-2023</span>
-                    <h3>Ensino Técnico em Desenvolvimento de Sistemas - ETEC Polivalente</h3>
-                    <p>Formação com foco em lógica de programação, desenvolvimento web, modelagem de banco de dados e criação de aplicações desktop e mobile através de projetos práticos.</p>
-                </div>
-                <div>
-                    <span>2024 - Atual</span>
-                    <h3>Análise e Desenvolvimento de Sistemas - FAM</h3>
-                    <p>Graduação em andamento com foco em arquitetura de software, desenvolvimento web, cloud computing, IA e melhores práticas de mercado.</p>
-                </div>
-                <ul>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
-                </ul>
-            </div>
-        </div>
-        <div class="cursos">
-            <div class="my_skills" id="Habilidades">
-                <h2><i class="fa-sharp fa-regular fa-star"></i>My Skills</h2>
-                <div class="skill_content">
-                    <h3>HTML 5</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                    </ul>
-                </div>
-                <div class="skill_content">
-                    <h3>CSS 3</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
-                    </ul>
-                </div>
-                <div class="skill_content">
-                    <h3>JavaScript</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star"></i></li>
-                        <li><i class="fa-solid fa-star-half-stroke"></i></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <section class="projects" id="portfolio">
-        <div class="sobre_titulo">
-            <h1>Projetos</h1>
-            <p>Projetos em destaque e soluções em produção</p>
-            <div aria-label="Seção de botões">
-                <span></span>
-                <span></span>
-                <span></span>
+        <section class="my_resume" id="resumo" aria-labelledby="resumo-titulo">
+            <div class="sobre_titulo">
+                <h2 id="resumo-titulo">Resumo</h2>
+                <p>Minha trajetória acadêmica e experiências no mercado de tecnologia.</p>
+                <div class="dots_decorativos" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
+            <div class="resume_generica">
+                <div class="resume_col experience_section">
+                    <h3 class="experience"><i class="fa-solid fa-handshake" aria-hidden="true"></i> Experience</h3>
+                    <div class="experience_content">
+                        <div>
+                            <span>2025 - Atual</span>
+                            <h4>Analista de T.I - GHPC Group</h4>
+                            <p>Responsável pela infraestrutura, suporte, manutenção e desenvolvimento em todo o grupo GHPC!</p>
+                        </div>
+                        <div>
+                            <span>2026</span>
+                            <h4>Web Developer - FrançaSilva</h4>
+                            <p>Desenvolvimento da página web para a empresa FrançaSilva</p>
+                        </div>
+                        <ul aria-label="Controle de visualização de experiências">
+                            <li tabindex="0" role="button" aria-label="Experiência 1"><i class="fa-sharp fa-solid fa-circle" aria-hidden="true"></i></li>
+                            <li tabindex="0" role="button" aria-label="Experiência 2"><i class="fa-sharp fa-solid fa-circle" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div class="project_spotlight">
-            <div class="project_card">
-                <!-- Browser Mockup Window -->
-                <div class="browser_mockup">
-                    <div class="browser_bar">
-                        <div class="browser_dots">
-                            <span class="dot dot_red"></span>
-                            <span class="dot dot_yellow"></span>
-                            <span class="dot dot_green"></span>
+                <div class="resume_col education_section">
+                    <h3 class="education"><i class="fa-solid fa-book" aria-hidden="true"></i> Education</h3>
+                    <div class="education_content">
+                        <div>
+                            <span>2021-2023</span>
+                            <h4>Ensino Técnico em Desenvolvimento de Sistemas - ETEC Polivalente</h4>
+                            <p>Formação com foco em lógica de programação, desenvolvimento web, modelagem de banco de dados e criação de aplicações desktop e mobile através de projetos práticos.</p>
                         </div>
-                        <div class="browser_address">
-                            <i class="fa-solid fa-lock"></i>
-                            <span>https://francasilva.com</span>
+                        <div>
+                            <span>2024 - Atual</span>
+                            <h4>Análise e Desenvolvimento de Sistemas - FAM</h4>
+                            <p>Graduação em andamento com foco em arquitetura de software, desenvolvimento web, cloud computing, IA e melhores práticas de mercado.</p>
                         </div>
-                        <div class="browser_actions">
-                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        <ul aria-label="Controle de visualização de formações">
+                            <li tabindex="0" role="button" aria-label="Formação 1"><i class="fa-sharp fa-solid fa-circle" aria-hidden="true"></i></li>
+                            <li tabindex="0" role="button" aria-label="Formação 2"><i class="fa-sharp fa-solid fa-circle" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cursos">
+                <div class="my_skills" id="habilidades">
+                    <h3><i class="fa-sharp fa-regular fa-star" aria-hidden="true"></i> My Skills</h3>
+                    <div class="skill_content">
+                        <h4>HTML 5</h4>
+                        <ul aria-label="Nível 4 de 5 estrelas">
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill_content">
+                        <h4>CSS 3</h4>
+                        <ul aria-label="Nível 3.5 de 5 estrelas">
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skill_content">
+                        <h4>JavaScript</h4>
+                        <ul aria-label="Nível 3.5 de 5 estrelas">
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star"></i></li>
+                            <li aria-hidden="true"><i class="fa-solid fa-star-half-stroke"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="portfolio" aria-labelledby="portfolio-titulo">
+            <div class="sobre_titulo">
+                <h2 id="portfolio-titulo">Projetos</h2>
+                <p>Projetos em destaque e soluções em produção</p>
+                <div class="dots_decorativos" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="project_spotlight">
+                <article class="project_card">
+                    <!-- Browser Mockup Window -->
+                    <div class="browser_mockup" aria-hidden="true">
+                        <div class="browser_bar">
+                            <div class="browser_dots">
+                                <span class="dot dot_red"></span>
+                                <span class="dot dot_yellow"></span>
+                                <span class="dot dot_green"></span>
+                            </div>
+                            <div class="browser_address">
+                                <i class="fa-solid fa-lock"></i>
+                                <span>https://francasilva.com</span>
+                            </div>
+                            <div class="browser_actions">
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                            </div>
+                        </div>
+                        <div class="browser_screen">
+                            <img src="https://www.francasilva.com/1.webp" alt="França Silva - Soluções em Pavimentos Industriais" width="800" height="500" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='img/Projects/img_1.png';">
+                            <div class="browser_overlay">
+                                <a href="https://francasilva.com" target="_blank" rel="noopener noreferrer" class="overlay_badge">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Visitar Website
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="browser_screen">
-                        <img src="https://www.francasilva.com/1.webp" alt="França Silva - Soluções em Pavimentos" onerror="this.onerror=null; this.src='img/Projects/img_1.png';">
-                        <div class="browser_overlay">
-                            <a href="https://francasilva.com" target="_blank" rel="noopener noreferrer" class="overlay_badge">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar Website
+
+                    <!-- Project Content Details -->
+                    <div class="project_info">
+                        <div class="project_badge_row">
+                            <span class="badge_status"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Em Produção</span>
+                            <span class="badge_type">Website Institucional</span>
+                        </div>
+
+                        <h3 class="project_title">França Silva</h3>
+                        <p class="project_subtitle">Soluções e Tecnologia em Pavimentos Industriais</p>
+
+                        <p class="project_description">
+                            Website institucional completo e responsivo desenvolvido para a <strong>França Silva</strong>, especialista em pisos industriais de alto desempenho. O projeto conta com suporte a múltiplos idiomas (i18n), navegação fluida, formulários de contato e arquitetura focada em SEO e conversão.
+                        </p>
+
+                        <!-- Destaques / Features -->
+                        <div class="project_features">
+                            <div class="feature_item">
+                                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Multilíngue</h4>
+                                    <p>Suporte a 6 idiomas com seletor interativo</p>
+                                </div>
+                            </div>
+                            <div class="feature_item">
+                                <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+                                <div>
+                                    <h4>100% Responsivo</h4>
+                                    <p>Experiência perfeita em desktop e mobile</p>
+                                </div>
+                            </div>
+                            <div class="feature_item">
+                                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Alta Performance</h4>
+                                    <p>Carregamento rápido e otimizado</p>
+                                </div>
+                            </div>
+                            <div class="feature_item">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                <div>
+                                    <h4>SEO Otimizado</h4>
+                                    <p>Estrutura pronta para indexação no Google</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tech Tags -->
+                        <div class="project_techs" aria-label="Tecnologias utilizadas">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>i18n (Multi-idiomas)</span>
+                            <span>SEO</span>
+                            <span>Design Responsivo</span>
+                        </div>
+
+                        <!-- CTA Actions -->
+                        <div class="project_actions">
+                            <a href="https://francasilva.com" target="_blank" rel="noopener noreferrer" class="btn_view_live">
+                                <span>Acessar Site Ao Vivo</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://wa.me/5519989296671?text=Ol%C3%A1%20Yuri,%20vi%20seu%20projeto%20da%20Fran%C3%A7a%20Silva!" target="_blank" rel="noopener noreferrer" class="btn_discuss_project">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                <span>Conversar sobre o projeto</span>
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Project Content Details -->
-                <div class="project_info">
-                    <div class="project_badge_row">
-                        <span class="badge_status"><i class="fa-solid fa-circle-check"></i> Em Produção</span>
-                        <span class="badge_type">Website Institucional</span>
-                    </div>
-
-                    <h2 class="project_title">França Silva</h2>
-                    <h3 class="project_subtitle">Soluções e Tecnologia em Pavimentos Industriais</h3>
-
-                    <p class="project_description">
-                        Website institucional completo e responsivo desenvolvido para a <strong>França Silva</strong>, especialista em pisos industriais de alto desempenho. O projeto conta com suporte a múltiplos idiomas (i18n), navegação fluida, formulários de contato e arquitetura focada em SEO e conversão.
-                    </p>
-
-                    <!-- Destaques / Features -->
-                    <div class="project_features">
-                        <div class="feature_item">
-                            <i class="fa-solid fa-globe"></i>
-                            <div>
-                                <h4>Multilíngue</h4>
-                                <p>Suporte a 6 idiomas com seletor interativo</p>
-                            </div>
-                        </div>
-                        <div class="feature_item">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <div>
-                                <h4>100% Responsivo</h4>
-                                <p>Experiência perfeita em desktop e mobile</p>
-                            </div>
-                        </div>
-                        <div class="feature_item">
-                            <i class="fa-solid fa-bolt"></i>
-                            <div>
-                                <h4>Alta Performance</h4>
-                                <p>Carregamento rápido e otimizado</p>
-                            </div>
-                        </div>
-                        <div class="feature_item">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <div>
-                                <h4>SEO Otimizado</h4>
-                                <p>Estrutura pronta para indexação no Google</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tech Tags -->
-                    <div class="project_techs">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>i18n (Multi-idiomas)</span>
-                        <span>SEO</span>
-                        <span>Design Responsivo</span>
-                    </div>
-
-                    <!-- CTA Actions -->
-                    <div class="project_actions">
-                        <a href="https://francasilva.com" target="_blank" rel="noopener noreferrer" class="btn_view_live">
-                            <span>Acessar Site Ao Vivo</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <a href="https://wa.me/5519989296671?text=Ol%C3%A1%20Yuri,%20vi%20seu%20projeto%20da%20Fran%C3%A7a%20Silva!" target="_blank" rel="noopener noreferrer" class="btn_discuss_project">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <span>Conversar sobre o projeto</span>
-                        </a>
-                    </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer" id="contato">
         <div class="footer_container">
             <div class="footer_content footer_about">
-                <h2>NSC<span>MNTO</span></h2>
+                <a href="#home" class="footer_logo" aria-label="NSCMNTO - Voltar para o início">NSC<span>MNTO</span></a>
                 <p>Analista de T.I & Desenvolvedor Web focado em criar soluções digitais modernas, eficientes e de alto impacto.</p>
                 <div class="footer_social">
-                    <a href="https://github.com/yurinascmnt05" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yurinnscmnto" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://instagram.com/yurisilva_nascimento" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/5519989296671" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://github.com/yurinascmnt05" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil no GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/yurinnscmnto" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil no LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/yurisilva_nascimento" target="_blank" rel="noopener noreferrer" aria-label="Acessar perfil no Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/5519989296671" target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
                 </div>
             </div>
 
             <div class="footer_content footer_links">
                 <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
-                    <li><a href="#sobre"><i class="fa-solid fa-chevron-right"></i> Sobre mim</a></li>
-                    <li><a href="#resumo"><i class="fa-solid fa-chevron-right"></i> Resumo</a></li>
-                    <li><a href="#Habilidades"><i class="fa-solid fa-chevron-right"></i> Habilidades</a></li>
-                    <li><a href="#portfolio"><i class="fa-solid fa-chevron-right"></i> Projetos</a></li>
-                </ul>
+                <nav aria-label="Links rápidos do rodapé">
+                    <ul>
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="#sobre"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Sobre mim</a></li>
+                        <li><a href="#resumo"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Resumo</a></li>
+                        <li><a href="#habilidades"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Habilidades</a></li>
+                        <li><a href="#portfolio"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Projetos</a></li>
+                    </ul>
+                </nav>
             </div>
 
             <div class="footer_content footer_services">
                 <h3>Serviços</h3>
                 <ul>
-                    <li><span><i class="fa-solid fa-pen-to-square"></i> Web Design</span></li>
-                    <li><span><i class="fa-solid fa-globe"></i> Web Development</span></li>
-                    <li><span><i class="fa-solid fa-palette"></i> UX/UI Design</span></li>
-                    <li><span><i class="fa-solid fa-camera"></i> Photography</span></li>
-                    <li><span><i class="fa-solid fa-layer-group"></i> SEO Analysis</span></li>
+                    <li><span><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Web Design</span></li>
+                    <li><span><i class="fa-solid fa-globe" aria-hidden="true"></i> Web Development</span></li>
+                    <li><span><i class="fa-solid fa-palette" aria-hidden="true"></i> UX/UI Design</span></li>
+                    <li><span><i class="fa-solid fa-camera" aria-hidden="true"></i> Photography</span></li>
+                    <li><span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> SEO Analysis</span></li>
                 </ul>
             </div>
 
             <div class="footer_content footer_contact">
                 <h3>Contato</h3>
-                <ul class="contact_info">
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
+                <address class="contact_info">
+                    <p>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                         <span>Americana - SP</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>yurisn17@gmail.com</span>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>+55 19 989296671</span>
-                    </li>
-                </ul>
-                <a href="https://wa.me/5519989296671" target="_blank" rel="noopener noreferrer" class="footer_btn"><i class="fa-brands fa-whatsapp"></i> Fale Comigo</a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:yurisn17@gmail.com">yurisn17@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        <a href="https://wa.me/5519989296671" target="_blank" rel="noopener noreferrer">+55 19 989296671</a>
+                    </p>
+                </address>
+                <a href="https://wa.me/5519989296671" target="_blank" rel="noopener noreferrer" class="footer_btn"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Fale Comigo</a>
             </div>
         </div>
 
         <div class="footer_bottom">
             <p>&copy; 2026 Yuri Nascimento. Todos os direitos reservados.</p>
-            <a href="#home" class="back_to_top" aria-label="Voltar ao topo">
-                <i class="fa-solid fa-arrow-up"></i>
+            <a href="#home" class="back_to_top" aria-label="Voltar ao topo da página">
+                <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
             </a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2.2"></script>
 </body>
 </html>
